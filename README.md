@@ -1,1 +1,3 @@
 # WebDeveloper
+
+`sudo ng serve`

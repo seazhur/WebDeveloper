@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --primary-color: #f4f4f2;
+  --secondary-color: #d9d9d9;
+  --success-color: #ed4a29;
+  --light-color: white;
+  --dark-color: black;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.selected1 {
+  border: 3px solid greenyellow;
+  background-color: rgba(188, 188, 188, 0.617);
+}
+
+.selected2 {
+  border: 3px solid orangered;
+  background-color: tomato;
+}
+
+.selected3 {
+  background-color: rgb(223, 245, 53);
+}
+
+.selected4 {
+  background-color: rgb(146, 245, 53);
+}
+
+// @import "node_modules/bootstrap/scss/bootstrap";
