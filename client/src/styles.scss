@@ -10,25 +10,27 @@
   --dark-color: black;
 }
 
-.bg-primary {
-  background-color: var(--primary-color);
-}
+// .bg-primary {
+//   background-color: var(--primary-color);
+// }
 
-.bg-secondary {
-  background-color: var(--secondary-color);
-}
+// .bg-secondary {
+//   background-color: var(--secondary-color);
+// }
 
-.bg-light {
-  background-color: var(--light-color);
-}
+// .bg-light {
+//   background-color: var(--light-color);
+// }
 
-.bg-dark {
-  background-color: var(--dark-color);
-}
+// .bg-dark {
+//   background-color: var(--dark-color);
+// }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
 }
 
 .selected1 {
@@ -50,3 +52,21 @@ body {
 }
 
 // @import "node_modules/bootstrap/scss/bootstrap";
+
+// FONTS
+
+h6 {
+  font-family: "Dela Gothic One";
+  font-size: 13px;
+  line-height: 15px;
+}
+
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-Medium.otf);
+}
+
+p {
+  font-family: "Neue Montreal Medium";
+  font-size: 13px;
+}
