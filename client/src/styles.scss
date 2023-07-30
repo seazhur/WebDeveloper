@@ -8,6 +8,7 @@
   --success-color: #ed4a29;
   --light-color: white;
   --dark-color: black;
+  --accent-color: #c2e649;
 }
 
 // .bg-primary {
@@ -55,7 +56,38 @@
 
 // FONTS
 
+h1 {
+  // for home title
+  font-family: "Dela Gothic One";
+  font-size: 96px;
+}
+
+h2 {
+  // for home title
+  font-family: "Dela Gothic One";
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.textbox {
+  width: 260px;
+  margin: 64px;
+}
+
+h5 {
+  // for
+  color: var(--accent-color);
+  font-family: "Dela Gothic One";
+  font-size: 13px;
+  line-height: 40px;
+}
+
 h6 {
+  // for navbar title
   font-family: "Dela Gothic One";
   font-size: 13px;
   line-height: 15px;
@@ -69,4 +101,21 @@ h6 {
 p {
   font-family: "Neue Montreal Medium";
   font-size: 13px;
+}
+
+// .button:hover {
+//   background: #eee;
+// }
+
+.page {
+  height: 90vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  // 900
+}
+
+.textbox {
+  // margin-left: auto;
+  // margin-right: auto;
 }
