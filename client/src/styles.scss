@@ -30,8 +30,11 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
   color: white;
+}
+
+body {
+  background-color: black;
 }
 
 .selected1 {
@@ -41,11 +44,13 @@
 
 .selected2 {
   border: 3px solid orangered;
-  background-color: tomato;
+  // background-color: tomato;
 }
 
 .selected3 {
-  background-color: rgb(223, 245, 53);
+  border: 3px solid blueviolet;
+
+  // background-color: rgb(223, 245, 53);
 }
 
 .selected4 {
@@ -67,6 +72,13 @@ h2 {
   font-family: "Dela Gothic One";
   font-size: 40px;
   line-height: 40px;
+}
+
+h3 {
+  // for home title
+  font-family: "Dela Gothic One";
+  font-size: 48px;
+  line-height: 45px;
 }
 
 .accent-color {
@@ -91,6 +103,11 @@ h6 {
 @font-face {
   font-family: "Neue Montreal Medium";
   src: url(/client/src/assets/Neue-Montreal/NeueMontreal-Medium.otf);
+}
+
+@font-face {
+  font-family: "Neue Montreal Italic";
+  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-MediumItalic.otf);
 }
 
 p {

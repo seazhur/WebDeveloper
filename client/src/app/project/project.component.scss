@@ -1,0 +1,58 @@
+.flex-container {
+  display: flex;
+  background-color: #404040;
+  border-radius: 36px;
+  height: 490px;
+}
+
+.flex-child {
+  flex: 1;
+  // background-color: #404040;
+
+  // border: 2px solid yellow;
+  background-color: transparent;
+  // background-color: #404040;
+}
+
+.description {
+  margin: 42px;
+}
+
+.box-1 {
+  flex: 40;
+}
+
+.box-2 {
+  flex: 60;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 640px;
+  height: 350px;
+  background-color: #525252;
+  border-radius: 36px;
+  transform: rotate(-18deg);
+}
+
+.image1 {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  background-color: #606060;
+}
+
+.image2 {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  background-color: #525252;
+}
+
+// 606060
+
+// div.image::before {
+//   background-color: aliceblue;
+//   // content: url(http://placehold.it/350x150);
+// }
