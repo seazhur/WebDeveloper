@@ -1,16 +1,60 @@
 <br />
 <br />
-<div class="flex-container">
-  <div class="flex-child box-1">
-    <div class="description">
-      <p>WEB APPLICATION</p>
+<div
+  class="flex-container"
+  [ngStyle]="{
+    'background-color': version == '1' ? '#404040' : '#ffffff'
+  }"
+>
+  <div class="flex-child box-1 selected1">
+    <div
+      class="description selected1"
+      [ngStyle]="{
+        color: version == '1' ? '#ffffff' : '#404040'
+      }"
+    >
+      <p class="large">{{ type }}</p>
       <br />
-      <h3>Spotify Arcade</h3>
+      <h3>{{ name }}</h3>
+      <br />
+
+      <p class="large"></p>
+      <!-- Multiplayer compatability -->
+
+      <!-- <br /> -->
+      {{ url }}
+      <br />
+      {{ comments }}
+      <br />
+
+      <button
+        class="open-button bottom-left"
+        [ngStyle]="{
+          'background-color': version == '1' ? '#ffffff' : '#404040',
+          color: version == '1' ? '#404040' : '#ffffff'
+        }"
+      >
+        LAUNCH
+      </button>
     </div>
   </div>
 
   <div class="flex-child box-2">
-    <div class="image image1"></div>
-    <div class="image image2"></div>
+    <!-- type 1 -->
+    <ng-container *ngIf="version == '1'">
+      <div class="web-image web-image1">
+        <img class="idk" [src]="images[0]" alt="web-image1" />
+      </div>
+      <div class="web-image web-image2">
+        <img class="idk" [src]="images[1]" alt="web-image2" />
+      </div>
+    </ng-container>
+
+    <!-- type 2 -->
+    <ng-container *ngIf="version == '2'">
+      <div class="mob-image mob-image1"></div>
+      <div class="mob-image mob-image2"></div>
+      <div class="mob-image mob-image3"></div>
+    </ng-container>
   </div>
 </div>

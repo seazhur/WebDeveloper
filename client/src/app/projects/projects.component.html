@@ -7,8 +7,25 @@
     <h2>Check out my portfolio!</h2>
   </div>
   <div style="margin-left: 64px; margin-right: 64px">
-    <app-project></app-project>
-    <app-project></app-project>
+    <app-project
+      version="1"
+      type="WEB APPLICATION"
+      name="Spotify Arcade"
+      url="https://spotify.com/"
+      [comments]="['“Certified high-quality app through Spotify”']"
+      [images]="['/assets/spotify1.png', '/assets/spotify2.png']"
+    ></app-project>
+
+    <app-project
+      version="2"
+      type="MOBILE APPLICATION"
+      name="RemindMe!"
+      url=""
+      [comments]="['1', '2']"
+      [images]="['1', '2', '3']"
+    ></app-project>
+
+    <!-- <app-project></app-project> -->
 
     <!-- <app-project></app-project> -->
   </div>
