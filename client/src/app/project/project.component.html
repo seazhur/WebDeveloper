@@ -19,10 +19,17 @@
       <br />
 
       <p class="large"></p>
-      <!-- Multiplayer compatability -->
       <br />
-      {{ comments }}
-      <br />
+
+      <div
+        *ngFor="let comment of comments; let i = index"
+        [attr.data-index]="i"
+      >
+        <div class="box">
+          <img class="star" src="/assets/star-bullet.png" />
+          <div class="regular-font">{{ comment }}</div>
+        </div>
+      </div>
 
       <button
         class="open-button bottom-left"

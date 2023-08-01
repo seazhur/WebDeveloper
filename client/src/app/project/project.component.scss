@@ -38,7 +38,7 @@
 
 .idk {
   position: absolute;
-  left: -1195px;
+  left: -1165px;
   top: -863px;
   scale: 0.22;
   filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.6));
@@ -90,14 +90,14 @@
 .open-button {
   // background-color: white;
   // color: black;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .large {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .bottom-left {
@@ -106,9 +106,15 @@
   left: 0px;
 }
 
-// 606060
+.star {
+  // scale: 0.5;
+  margin-right: 15px;
+  height: 28px;
+  width: 28px;
+}
 
-// div.image::before {
-//   background-color: aliceblue;
-//   // content: url(http://placehold.it/350x150);
-// }
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}

@@ -77,8 +77,8 @@ h2 {
 h3 {
   // for home title
   font-family: "Dela Gothic One";
-  font-size: 48px;
-  line-height: 45px;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .accent-color {
@@ -100,20 +100,41 @@ h6 {
   line-height: 15px;
 }
 
+////////////////////////////////////////////////////////////
+
 @font-face {
   font-family: "Neue Montreal Medium";
   src: url(/client/src/assets/Neue-Montreal/NeueMontreal-Medium.otf);
-}
-
-@font-face {
-  font-family: "Neue Montreal Italic";
-  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-MediumItalic.otf);
 }
 
 p {
   font-family: "Neue Montreal Medium";
   font-size: 13px;
 }
+
+////////////////////////////////////////////////////////////
+
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url(/assets/Neue-Montreal/NeueMontreal-Regular.otf);
+}
+
+.regular-font {
+  font-family: "Neue Montreal Regular";
+  font-size: 20px;
+}
+
+////////////////////////////////////////////////////////////
+
+@font-face {
+  font-family: "Neue Montreal Italic";
+  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-MediumItalic.otf);
+}
+
+// h4 {
+//   font-family: "Neue Montreal Regular";
+//   font-size: 20px;
+// }
 
 // .button:hover {
 //   background: #eee;
