@@ -6,9 +6,9 @@
     'background-color': version == '1' ? '#404040' : '#ffffff'
   }"
 >
-  <div class="flex-child box-1 selected1">
+  <div class="flex-child box-1">
     <div
-      class="description selected1"
+      class="description"
       [ngStyle]="{
         color: version == '1' ? '#ffffff' : '#404040'
       }"
@@ -20,9 +20,6 @@
 
       <p class="large"></p>
       <!-- Multiplayer compatability -->
-
-      <!-- <br /> -->
-      {{ url }}
       <br />
       {{ comments }}
       <br />
@@ -33,6 +30,7 @@
           'background-color': version == '1' ? '#ffffff' : '#404040',
           color: version == '1' ? '#404040' : '#ffffff'
         }"
+        (click)="open(url)"
       >
         LAUNCH
       </button>

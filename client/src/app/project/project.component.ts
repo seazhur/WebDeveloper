@@ -12,4 +12,9 @@ export class ProjectComponent {
   @Input() url: string;
   @Input() comments: string[];
   @Input() images: string[];
+
+  open(url: string) {
+    // the url,html tag should be called from here , how ?
+    window.open(url);
+  }
 }
