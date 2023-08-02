@@ -1,8 +1,25 @@
 .navbar {
   overflow: hidden;
   margin: 20px 64px 0px 64px;
-  border-bottom: 1px solid white;
+  // border-bottom: 1px solid white;
   background-color: black;
+}
+
+.bottom-border {
+  border-bottom: 1px solid white;
+  animation: changeBorders 1s linear;
+}
+
+@keyframes changeBorders {
+  0% {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
 }
 
 .navbar-background {
