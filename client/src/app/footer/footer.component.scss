@@ -1,0 +1,26 @@
+.footer {
+  overflow: hidden;
+  margin: 20px 64px 0px 64px;
+  background-color: black;
+}
+
+.footer a {
+  float: left;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  margin: 0px;
+  color: white;
+}
+
+.no-left-padding {
+  padding-left: 0px !important;
+}
+
+.no-right-padding {
+  padding-right: 0px !important;
+}
+
+.footer-right {
+  float: right;
+}
