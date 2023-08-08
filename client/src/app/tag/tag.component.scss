@@ -1,0 +1,62 @@
+.container {
+  height: 40px;
+  display: inline-block;
+}
+
+.text {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  float: left;
+}
+
+.checkerboard {
+  width: 12px;
+  float: left;
+}
+
+.white {
+  background-color: white;
+  animation-name: blacken;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+}
+
+.black {
+  background-color: black;
+  animation-name: whiten;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+}
+
+.square {
+  width: 6px;
+  height: 6px;
+  float: left;
+}
+
+@keyframes blacken {
+  0%,
+  49.99% {
+    background-color: black;
+  }
+  50%,
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes whiten {
+  0%,
+  49.99% {
+    background-color: white;
+  }
+  50%,
+  100% {
+    background-color: black;
+  }
+}

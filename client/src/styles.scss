@@ -5,11 +5,6 @@
 :root {
   --primary-color: #f9f9f9;
   --secondary-color: #262626;
-  //
-  --success-color: #ed4a29;
-  --light-color: white;
-  --dark-color: black;
-  --accent-color: #c2e649;
 }
 
 * {
@@ -34,14 +29,6 @@ body {
   border: 3px solid blueviolet;
 }
 
-.page {
-  height: 100vh;
-  // width: 100vw;
-  width: 100%;
-
-  max-width: 100%;
-}
-
 .margin-left {
   margin-left: 64px;
 }
@@ -54,15 +41,41 @@ body {
   margin-bottom: 64px;
 }
 
+.page {
+  height: 100vh;
+  // width: 100vw;
+  min-width: 100%;
+  width: 100%;
+}
+
+.large-page {
+  height: auto;
+}
+
+.textbox {
+  @extend .margin-left;
+  width: 543px;
+}
+
+.vertical-middle-align {
+  display: flex;
+  align-items: center;
+}
+
 ////////////////////////////////////////////////////////////
 
 @font-face {
-  font-family: "Neue Montreal Medium";
-  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-Medium.otf);
+  font-family: "Medium Neue Montreal";
+  src: url(./assets/Neue-Montreal/Medium.otf);
+}
+
+@font-face {
+  font-family: "Bold Neue Montreal";
+  src: url(./assets/Neue-Montreal/Bold.otf);
 }
 
 p {
-  font-family: "Neue Montreal Medium";
+  font-family: "Medium Neue Montreal";
   font-size: 13px;
 }
 
@@ -73,10 +86,24 @@ h1 {
   line-height: 120px;
 }
 
+h3 {
+  // for page titles
+  font-family: "Dela Gothic One";
+  font-size: 64px;
+  line-height: 60px;
+}
+
 h5 {
   // for headings
-  font-family: "Neue Montreal Medium";
-  font-size: 24px;
+  font-family: "Bold Neue Montreal";
+  font-size: 23px;
+}
+
+h6 {
+  // for page texts
+  font-family: "Medium Neue Montreal";
+  font-size: 20px;
+  // line-height: 15px;
 }
 
 // @import "node_modules/bootstrap/scss/bootstrap";
@@ -90,23 +117,9 @@ h2 {
   line-height: 40px;
 }
 
-h3 {
-  // for home title
-  font-family: "Dela Gothic One";
-  font-size: 60px;
-  line-height: 60px;
-}
-
 // .accent-color {
 //   color: var(--accent-color);
 // }
-
-h6 {
-  // for navbar title
-  font-family: "Dela Gothic One";
-  font-size: 13px;
-  line-height: 15px;
-}
 
 ////////////////////////////////////////////////////////////
 
@@ -122,34 +135,6 @@ h6 {
 
 ////////////////////////////////////////////////////////////
 
-@font-face {
-  font-family: "Neue Montreal Italic";
-  src: url(/client/src/assets/Neue-Montreal/NeueMontreal-MediumItalic.otf);
-}
-
-// h4 {
-//   font-family: "Neue Montreal Regular";
-//   font-size: 20px;
-// }
-
-// .button:hover {
-//   background: #eee;
-// }
-
-.large-page {
-  height: auto;
-}
-
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.textbox {
-  width: 302px;
-  margin: 64px;
-}
-
 .right {
   margin-left: auto;
   text-align: right;
@@ -159,10 +144,6 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-.page {
-  position: relative;
 }
 
 .fixed-bottom {
@@ -181,9 +162,3 @@ h6 {
 .show {
   opacity: 1;
 }
-
-// @media (prefers-reduced-motion) {
-//   .hidden {
-//     transition: none;
-//   }
-// }
