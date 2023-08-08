@@ -1,6 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* -------------------------------------------------------------------------- */
+/*                                   Testing                                  */
+/* -------------------------------------------------------------------------- */
 
-// @import "node_modules/bootstrap/scss/bootstrap";
+.selected1 {
+  border: 3px solid greenyellow;
+}
+
+.selected2 {
+  border: 3px solid orangered;
+}
+
+.selected3 {
+  border: 3px solid blueviolet;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
 
 :root {
   --primary-color: #f9f9f9;
@@ -17,17 +33,9 @@ body {
   color: var(--secondary-color);
 }
 
-.selected1 {
-  border: 3px solid greenyellow;
-}
-
-.selected2 {
-  border: 3px solid orangered;
-}
-
-.selected3 {
-  border: 3px solid blueviolet;
-}
+/* -------------------------------------------------------------------------- */
+/*                               Margins & Pages                              */
+/* -------------------------------------------------------------------------- */
 
 .margin-left {
   margin-left: 64px;
@@ -57,12 +65,9 @@ body {
   width: 543px;
 }
 
-.vertical-middle-align {
-  display: flex;
-  align-items: center;
-}
-
-////////////////////////////////////////////////////////////
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
 
 @font-face {
   font-family: "Medium Neue Montreal";
@@ -106,22 +111,14 @@ h6 {
   // line-height: 15px;
 }
 
-// @import "node_modules/bootstrap/scss/bootstrap";
-
-// FONTS
+// TODO:
 
 h2 {
   // for home title
-  font-family: "Dela Gothic One";
-  font-size: 40px;
-  line-height: 40px;
+  // font-family: "Dela Gothic One";
+  // font-size: 40px;
+  // line-height: 40px;
 }
-
-// .accent-color {
-//   color: var(--accent-color);
-// }
-
-////////////////////////////////////////////////////////////
 
 @font-face {
   font-family: "Neue Montreal Regular";
@@ -133,7 +130,19 @@ h2 {
   font-size: 20px;
 }
 
-////////////////////////////////////////////////////////////
+/* -------------------------------------------------------------------------- */
+/*                                  Alignment                                 */
+/* -------------------------------------------------------------------------- */
+
+.vertical-middle-align {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-middle-align {
+  display: flex;
+  justify-content: center;
+}
 
 .right {
   margin-left: auto;
@@ -153,7 +162,10 @@ h2 {
   left: 0;
 }
 
-////////////////////////////////////////////////////////////
+/* -------------------------------------------------------------------------- */
+/*                                 Appearance                                 */
+/* -------------------------------------------------------------------------- */
+
 .hidden {
   opacity: 0;
   transition: all 1s;
@@ -161,4 +173,30 @@ h2 {
 
 .show {
   opacity: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Splitting Containers                            */
+/* -------------------------------------------------------------------------- */
+
+.flex-container {
+  display: flex;
+  border-radius: 36px;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-child {
+  flex: 1;
+  background-color: transparent;
+}
+
+.box-1 {
+  flex: 40;
+}
+
+.box-2 {
+  flex: 60;
+  position: relative;
+  overflow: hidden;
 }
