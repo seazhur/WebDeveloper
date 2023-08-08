@@ -1,21 +1,11 @@
-// .page {
-//   height: 900px;
-//   // 900
-// }
-
-.box {
+.bottom-left {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
 }
 
-.title {
-  text-align: center;
-  line-height: 100px;
-}
-
-.outline {
-  color: transparent;
-  -webkit-text-stroke: 0.2px white;
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

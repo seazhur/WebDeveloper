@@ -1,45 +1,26 @@
-.navbar {
-  overflow: hidden;
-  margin: 20px 64px 0px 64px;
-  // border-bottom: 1px solid white;
-  background-color: black;
-}
-
-.bottom-border {
-  border-bottom: 1px solid white;
-  animation: changeBorders 1s linear;
-}
-
-@keyframes changeBorders {
-  0% {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-  }
-  50% {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    border-bottom: 1px solid rgb(255, 255, 255);
-  }
-}
-
-.navbar-background {
-  background-color: black;
-  position: fixed;
+.navbar-container {
+  background-color: var(--primary-color);
   width: 100%;
-  height: 80px;
-  top: 0;
-  left: 0;
+  height: 75px;
   z-index: -100;
 }
+.navbar {
+  overflow: hidden;
+  height: 100%;
+}
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 
-/* Style the links inside the navigation bar */
 .navbar a {
   float: left;
   text-align: center;
-  padding: 24px 16px;
+  padding: 30px 16px;
   text-decoration: none;
   margin: 0px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .no-left-padding {
@@ -50,14 +31,12 @@
   padding-right: 0px !important;
 }
 
-/* Change the color of links on hover */
 .navbar p:not(.static):hover {
   text-decoration: line-through;
 }
 
-/* Right-aligned section inside the top navigation */
+// TODO: move remove animation from p webdev
+
 .navbar-right {
   float: right;
 }
-
-// TODO: move remove animation from p webdev
