@@ -1,0 +1,45 @@
+.vehicle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  scale: 0.8;
+}
+
+.tamu-logo {
+  position: absolute;
+  top: 280px;
+  left: 680px;
+  transform: rotate(10deg);
+}
+
+.ps-logo {
+  position: absolute;
+  top: 280px;
+  left: 430px;
+  transform: rotate(-17deg);
+}
+
+.general-card {
+  position: absolute;
+  top: 380px;
+  left: 80px;
+  transform: rotate(-17deg);
+  scale: 0.6;
+  filter: drop-shadow(-10px 10px 0.75rem black);
+}
+
+.tamu-card {
+  display: none;
+}
+
+.tamu-logo:hover + .tamu-card {
+  display: block;
+}
+
+.ps-card {
+  display: none;
+}
+
+.ps-logo:hover + .ps-card {
+  display: block;
+}
