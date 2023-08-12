@@ -6,13 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent {
-  @Input() version: string;
-  @Input() type: string;
   @Input() name: string;
+  @Input() description: string;
   @Input() url: string;
-  @Input() comments: string[];
   @Input() images: string[];
+  @Input() version: string;
 
+  // TODO: remove
   open(url: string) {
     // the url,html tag should be called from here , how ?
     window.open(url);

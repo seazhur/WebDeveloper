@@ -1,39 +1,65 @@
-<div class="page large-page">
-  <br /><br /><br />
-  <div class="textbox center" data-aos="fade-up" data-aos-duration="1000">
-    <br />
-    <br />
-    <br />
-    <h5>PROJECTS</h5>
-    <h2>Check out my portfolio!</h2>
-  </div>
-  <div style="margin-left: 64px; margin-right: 64px">
-    <app-project
-      version="1"
-      type="WEB APPLICATION"
-      name="Spotify Arcade"
-      url="https://spotify.com/"
-      [comments]="[
-        'Certified high-quality app through Spotify',
-        'Loved by many'
-      ]"
-      [images]="['/assets/spotify1.png', '/assets/spotify2.png']"
-    ></app-project>
-
-    <app-project
-      version="2"
-      type="MOBILE APPLICATION"
-      name="RemindMe!"
-      url=""
-      [comments]="['1', '2', '2', '2', '2']"
-      [images]="['1', '2', '3']"
-    ></app-project>
-
-    <br /><br />
-    <br /><br />
-
-    <!-- <app-project></app-project> -->
-
-    <!-- <app-project></app-project> -->
+<div class="page small-page">
+  <div class="flex-container">
+    <div class="flex-child box-2 vertical-middle-align horizontal-middle-align">
+      <div class="textbox center" data-aos="fade-up" data-aos-duration="1000">
+        <app-tag
+          title="PROJECTS"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        ></app-tag>
+        <br />
+        <br />
+        <h3 data-aos="fade-up" data-aos-duration="2000">
+          Check out my portfolio!
+        </h3>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="page large-page selected1">
+  <div class="flex-container">
+    <div class="flex-child box-1">
+      <!-- FIXME: Textbox Slider, Project Desription -->
+      <div class="textbox-slider vertical-middle-align selected3 sticky">
+        <div class="textbox selected2">
+          <!-- TODO: For eacch of the projects -->
+          <!-- TODO: Add their title/description/link into project class? -->
+          <!-- TODO:  -->
+
+          <img class="flag" src="/assets/flag.png" alt="flag" />
+          <!-- TODO: put objects here -->
+          <!-- <h2 data-aos="fade-up" data-aos-duration="2000">{{ name }}</h2> -->
+          <br />
+          <!-- <h6 data-aos="fade-up" data-aos-duration="2500">{{ description }}</h6> -->
+          <br />
+          <!-- <app-button name="LEARN MORE" url="{{ url }}"></app-button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- FIXME: Textbox Slider, Project Images -->
+
+    <div class="flex-child box-2 vertical-middle-align">
+      <!-- TODO: put objects here -->
+      <!-- TODO: ngfor each project -->
+
+      <ul>
+        <li *ngFor="let project of myProjects" class="page page-w selected3">
+          <!-- {{ project | json }} -->
+
+          <div class="web-image web-image1 parallax-1">
+            <img class="" [src]="project.image1" alt="web-image1" />
+          </div>
+          <div class="web-image web-image2 parallax-2">
+            <img class="" [src]="project.image2" alt="web-image2" />
+          </div>
+        </li>
+      </ul>
+      <!--  -->
+    </div>
+  </div>
+</div>
+
+<br /><br />
+<br /><br />

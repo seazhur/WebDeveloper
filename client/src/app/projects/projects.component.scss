@@ -1,0 +1,90 @@
+// .page {
+//   height: 100vh;
+//   min-width: 100%;
+//   width: 100%;
+// }
+
+.textbox-slider {
+  height: 100vh;
+  background-color: red;
+  top: 0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.flag {
+  width: 70px;
+  height: 64px;
+}
+
+ul {
+  width: 100%;
+}
+
+.page-w {
+  //   overflow-y: auto;
+  transform-style: preserve-3d;
+  //   perspective: 10px;
+}
+// .header {
+//   height: 100%;
+//   transform-style: preserve-3d;
+// }
+
+// .idk {
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .page {
+//   perspective: 10px;
+// }
+
+// .page {
+//   height: 200vh;
+// }
+
+/* -------------------------------------------------------------------------- */
+/*                               WEBSITE IMAGES                               */
+/* -------------------------------------------------------------------------- */
+
+.web-image {
+  width: 640px;
+  height: 350px;
+  // border-radius: 36px;
+  // transform: rotate(-18deg);
+  // scale: 0.2;
+  //   transform: translateZ(-10px);
+}
+
+.parallax-1 {
+  transform: translateZ(-10px) scale(0.4);
+  background-color: red;
+  // SLOW
+}
+
+.parallax-2 {
+  transform: translateZ(-5px) scale(0.3);
+  background-color: blue;
+
+  // FAST
+}
+
+// .web-image1 {
+//   position: absolute;
+//   top: -80px;
+//   right: 280px;
+// }
+
+// .web-image2 {
+//   position: absolute;
+//   bottom: 300px;
+//   left: -200px;
+// }

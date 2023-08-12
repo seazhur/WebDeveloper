@@ -28,9 +28,14 @@
   padding: 0;
 }
 
+// html {
+//   font-size: 16px;
+// }
+
 body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  // font-size: 100%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -54,15 +59,22 @@ body {
   // width: 100vw;
   min-width: 100%;
   width: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.small-page {
+  height: 50vh;
 }
 
 .large-page {
   height: auto;
+  // height: 200vh;
 }
 
 .textbox {
   @extend .margin-left;
-  width: 543px;
+  // width: 543px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -79,45 +91,55 @@ body {
   src: url(./assets/Neue-Montreal/Bold.otf);
 }
 
+@font-face {
+  font-family: "Regular Neue Montreal";
+  src: url(./assets/Neue-Montreal/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: "Light Neue Montreal";
+  src: url(./assets/Neue-Montreal/NeueMontreal-Light.otf);
+}
+
 p {
   font-family: "Medium Neue Montreal";
-  font-size: 13px;
+  font-size: 1vw; /* 13px *** */
 }
 
 h1 {
   // for home title
   font-family: "Dela Gothic One";
-  font-size: 128px;
-  line-height: 120px;
+  font-size: 6vw; /* 96px */
+  line-height: 6vw; /* 96px */
 }
 
 h3 {
   // for page titles
   font-family: "Dela Gothic One";
-  font-size: 64px;
-  line-height: 60px;
+  font-size: 4vw; /* 64px */
+  line-height: 3.75vw; /* 60px */
 }
 
 h5 {
   // for headings
   font-family: "Bold Neue Montreal";
-  font-size: 23px;
+  font-size: 23px; /* 23px */
 }
 
 h6 {
   // for page texts
-  font-family: "Medium Neue Montreal";
-  font-size: 20px;
+  font-family: "Regular Neue Montreal";
+  font-size: 1.25vw; /* 20px */
   // line-height: 15px;
 }
 
 // TODO:
 
 h2 {
-  // for home title
-  // font-family: "Dela Gothic One";
-  // font-size: 40px;
-  // line-height: 40px;
+  // for project titles
+  font-family: "Dela Gothic One";
+  font-size: 5vw; /* 80px */
+  line-height: 6.25vw; /* 100px */
 }
 
 @font-face {
@@ -127,7 +149,7 @@ h2 {
 
 .regular-font {
   font-family: "Neue Montreal Regular";
-  font-size: 20px;
+  font-size: 1.25vw; /* 20px */
 }
 
 /* -------------------------------------------------------------------------- */
@@ -181,22 +203,22 @@ h2 {
 
 .flex-container {
   display: flex;
-  border-radius: 36px;
+  // border-radius: 36px;
   height: 100%;
   width: 100%;
 }
 
-.flex-child {
-  flex: 1;
-  background-color: transparent;
-}
+// .flex-child {
+//   flex: 1;
+//   // background-color: transparent;
+// }
 
-.box-1 {
+.flex-child-left {
   flex: 40;
 }
 
-.box-2 {
+.flex-child-right {
   flex: 60;
-  position: relative;
-  overflow: hidden;
+  // position: relative;
+  // overflow: hidden;
 }

@@ -1,65 +1,56 @@
-<br />
-<br />
-<div
-  class="flex-container"
-  [ngStyle]="{
-    'background-color': version == '1' ? '#404040' : '#ffffff'
-  }"
->
-  <div class="flex-child box-1">
-    <div
-      class="description"
-      [ngStyle]="{
-        color: version == '1' ? '#ffffff' : '#404040'
-      }"
-    >
-      <p class="large">{{ type }}</p>
-      <br />
-      <h3>{{ name }}</h3>
-      <br />
+<!-- <div class="sticky">hello</div> -->
 
-      <p class="large"></p>
-      <br />
+<!-- type 1 -->
 
-      <div
-        *ngFor="let comment of comments; let i = index"
-        [attr.data-index]="i"
-      >
-        <div class="box">
-          <img class="star" src="/assets/star-bullet.png" />
-          <div class="regular-font">{{ comment }}</div>
+<!-- TODO: keep this in and move everything else into projects -->
+
+<!-- <ng-container *ngIf="version == '1'">
+        <div class="web-image web-image1">
+          <img class="" [src]="images[0]" alt="web-image1" />
         </div>
-      </div>
+        <div class="web-image web-image2">
+          <img class="" [src]="images[1]" alt="web-image2" />
+        </div>
+      </ng-container> -->
 
-      <button
-        class="open-button bottom-left"
-        [ngStyle]="{
-          'background-color': version == '1' ? '#ffffff' : '#404040',
-          color: version == '1' ? '#404040' : '#ffffff'
-        }"
-        (click)="open(url)"
-      >
-        LAUNCH
-      </button>
-    </div>
+<!-- TODO: need full page space -->
+
+<!-- <div class="scroll-container selected1">
+  <div class="header">
+    <img class="idk idk1 selected2" [src]="images[0]" alt="web-image1" />
+    <img class="idk idk2 selected3" [src]="images[1]" alt="web-image2" />
   </div>
+</div> -->
 
-  <div class="flex-child box-2">
-    <!-- type 1 -->
-    <ng-container *ngIf="version == '1'">
-      <div class="web-image web-image1">
-        <img class="idk" [src]="images[0]" alt="web-image1" />
-      </div>
-      <div class="web-image web-image2">
-        <img class="idk" [src]="images[1]" alt="web-image2" />
-      </div>
-    </ng-container>
+<!-- <ng-container *ngIf="version == '2'">
+        <div class="mob-image mob-image1"></div>
+        <div class="mob-image mob-image2"></div>
+        <div class="mob-image mob-image3"></div>
+      </ng-container> -->
 
-    <!-- type 2 -->
-    <ng-container *ngIf="version == '2'">
-      <div class="mob-image mob-image1"></div>
-      <div class="mob-image mob-image2"></div>
-      <div class="mob-image mob-image3"></div>
-    </ng-container>
+<!-- 
+<div class="sc-fMiknA gdzMJT">
+  <div height="140" class="sc-dVhcbM gYZKZF">
+    <img
+      src="/PLST.5e6755a7.png"
+      alt="fastRetailingPLST"
+      class="sc-hMqMXs iYRHw"
+      style="transform: translate(0px, -101.987%) scale(0.7)"
+    /><img
+      src="/GU2.c7a9fa12.png"
+      alt="fastRetailingGU2"
+      class="sc-kEYyzF bxGsZM"
+      style="transform: translate(0px, -40.7949%) scale(0.6)"
+    /><img
+      src="/UQ.44b0e7b2.png"
+      alt="fastRetailingUQ"
+      class="sc-jKJlTe dILFga"
+      style="transform: translate(0px, -305.962%)"
+    /><img
+      src="/GU.b6f34d05.png"
+      alt="fastRetailingGU"
+      class="sc-eNQAEJ eVzWMa"
+      style="transform: translate(0px, -163.179%) scale(0.9)"
+    />
   </div>
-</div>
+</div> -->
