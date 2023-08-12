@@ -1,45 +1,51 @@
-.vehicle {
+.complete-wallet {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.item {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  scale: 0.8;
+  top: 0px;
+  left: 0px;
+  // border: 3px solid #73ad21;
 }
 
-.tamu-logo {
+.pocket {
+  top: 80px;
+}
+
+.card {
+  left: 20px;
+  filter: drop-shadow(30px 10px 74px #0000001e);
+}
+
+.tamu-card-and-pocket {
   position: absolute;
-  top: 280px;
-  left: 680px;
-  transform: rotate(10deg);
+
+  top: 265px;
+  left: 90px;
 }
 
-.ps-logo {
+.ps-card-and-pocket {
   position: absolute;
-  top: 280px;
-  left: 430px;
-  transform: rotate(-17deg);
+
+  top: 165px;
+  left: 90px;
 }
 
-.general-card {
-  position: absolute;
-  top: 380px;
-  left: 80px;
-  transform: rotate(-17deg);
-  scale: 0.6;
-  filter: drop-shadow(-10px 10px 0.75rem black);
+// TODO: Fix bounding boxes
+
+@keyframes slide-in {
+  from {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-20%) translateY(-110%) rotate(-30deg);
+  }
 }
 
-.tamu-card {
-  display: none;
-}
-
-.tamu-logo:hover + .tamu-card {
-  display: block;
-}
-
-.ps-card {
-  display: none;
-}
-
-.ps-logo:hover + .ps-card {
-  display: block;
+.card:hover {
+  animation: slide-in 500ms;
+  animation-fill-mode: forwards;
 }
